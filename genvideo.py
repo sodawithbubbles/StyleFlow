@@ -1,18 +1,18 @@
-# 第四步 由帧生成视频
+# Generate the video by the stylized frames
 import cv2
 import os
+# frame_dir = "videos/allframes_wave"
+frame_dir = "examples/stylized_frames/output_lynx"
+frames = sorted(os.listdir(frame_dir)) # sorted frames
 
-frame_dir = "output_57_efraft"
-frames = sorted(os.listdir(frame_dir))  # 确保顺序！
-
-# 读取第一帧，确定分辨率
+# resolution
 first_frame = cv2.imread(os.path.join(frame_dir, frames[0]))
 h, w, _ = first_frame.shape
 
 out = cv2.VideoWriter(
-    "output2.mp4",
+    "examples/stylized_videos/lynx1.mp4", # video name
     cv2.VideoWriter_fourcc(*"mp4v"),
-    24,   # fps
+    30,   # fps
     (w, h)
 )
 
@@ -21,3 +21,5 @@ for f in frames:
     out.write(img)
 
 out.release()
+
+print("Done!")

@@ -1,4 +1,3 @@
-# 第三步 光流生成所有对应帧
 import gc
 import os
 import sys
@@ -16,20 +15,16 @@ from ezsynth.main_ez import Ezsynth
 
 st = time.time()
 
-style_paths = [
-    #"D:/Ezsynth/examples/styles/cat00000.jpg",
-    "D:/Ezsynth/examples/styles/cat00026.jpg",
-    #"D:/Ezsynth/examples/styles/style003.jpg",
-    #"D:/Ezsynth/examples/styles/style006.png",
-    #"D:/Ezsynth/examples/styles/style010.png",
-    #"D:/Ezsynth/examples/styles/style014.png",
-    #"D:/Ezsynth/examples/styles/style019.png",
-    #"D:/Ezsynth/examples/styles/style099.jpg",
+style_paths = [  # use one or several keyframes
+    "./examples/stylized_frames/lynx/lynx000.jpg",
+    # "./examples/stylized_frames/lynx/lynx025.jpg",
+    # "./examples/stylized_frames/lynx/lynx050.jpg",
+    # "./examples/stylized_frames/lynx/lynx098.jpg",
 ]
 
-image_folder = "D:/Ezsynth/videos/allframes_cat"
-mask_folder = "D:/Ezsynth/examples/mask/mask_feather"
-output_folder = "D:/Ezsynth/output"
+image_folder = "./examples/origin_frames/lynx"
+mask_folder = "./examples/mask/mask_feather"
+
 
 # edge_method="Classic"
 edge_method = "PAGE"
@@ -67,9 +62,9 @@ stylized_frames, err_frames, flow_frames = ezrunner.run_sequences_full(
 )
 # stylized_frames, err_frames = ezrunner.run_sequences(only_mode)
 
-save_seq(stylized_frames, "D:/Ezsynth/output_57_efraft_cat")
-save_seq(flow_frames, "D:/Ezsynth/flow_output_57_efraft_cat")
-# save_seq(err_frames, "D:/Ezsynth/output_51err")
+save_seq(stylized_frames, "./examples/stylized_frames/output_lynx")
+save_seq(flow_frames, "./examples/stylized_frames/flow_output_lynx")
+# save_seq(err_frames, "./examples/output_51err")
 
 gc.collect()
 torch.cuda.empty_cache()

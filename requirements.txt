@@ -1,0 +1,12 @@
+numpy
+opencv-python
+torch
+torchvision
+phycv
+scipy
+Pillow
+tqdm
+diffusers
+transformers
+einops
+accelerate
