@@ -18,9 +18,9 @@ Windows 10 - Python 3.11 - RTX5070
 
 ![](assets/comp1.gif)
 
-![](assets/comp2.gif)
 
-![](assets/comp3.gif)
+
+
 
 
 
