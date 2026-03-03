@@ -12,9 +12,9 @@ Windows 10 - Python 3.11 - RTX5070
 
 ### Reference Style
 
-| ukiyoe                   | starry_night | watercolor               |
-| ------------------------ | ------------ | ------------------------ |
-| ![](styles/1_square.jpg) |              | ![](styles/2_square.jpg) |
+| ukiyoe                   | starry_night             | watercolor               |
+| ------------------------ | ------------------------ | ------------------------ |
+| ![](styles/1_square.jpg) | ![](styles/4_square.jpg) | ![](styles/2_square.jpg) |
 
 ![](assets/comp1.gif)
 
