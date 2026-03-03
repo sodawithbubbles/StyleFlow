@@ -10,12 +10,20 @@ Windows 10 - Python 3.11 - RTX5070
 ```
 ## 🎬 Demo
 
-|     Reference Style   |
-|----------------------------------|
- ![](styles/1.jpg) |
+### Reference Style
+
+| ukiyoe                   | starry_night             | watercolor               |
+| ------------------------ | ------------------------ | ------------------------ |
+| ![](styles/1_square.jpg) | ![](styles/4_square.jpg) | ![](styles/2_square.jpg) |
+
+![](assets/comp1.gif)
+
+![](assets/comp2.gif)
+
+![](assets/comp3.gif)
 
 
-![Comparison](assets/comp1.gif)
+
 ## Get started
 
 ### Windows
