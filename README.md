@@ -8,7 +8,9 @@ Currently tested on:
 ```
 Windows 10 - Python 3.11 - RTX5070
 ```
+## 🎬 Demo
 
+![Comparison](assets/comp1.gif)
 ## Get started
 
 ### Windows
